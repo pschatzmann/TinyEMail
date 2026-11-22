@@ -7,6 +7,7 @@ var searchData=
   ['markasread_4',['markAsRead',['../structTinyMail.html#ac575bfcd7df4f38b089e847d19f36403',1,'TinyMail']]],
   ['markasunread_5',['markAsUnread',['../structTinyMail.html#ac60b67d3c8651ecb0dd0579e3b33e92a',1,'TinyMail']]],
   ['markflagged_6',['markFlagged',['../structTinyMail.html#aacfeb5c5fbc7d06e0550093b24e1c4b0',1,'TinyMail']]],
-  ['maxcredentialssize_7',['maxCredentialsSize',['../classTinySMTP.html#a4586d4361eedac58149247e3ae648087',1,'TinySMTP']]],
-  ['mount_8',['mount',['../classfatfs_1_1FileIO.html#a8f05693c3d6941aa86b436afeeb68d8a',1,'fatfs::FileIO']]]
+  ['markread_7',['markRead',['../classTinyMailStore.html#a6404799a332e36d3d41db89c618b8db9',1,'TinyMailStore']]],
+  ['maxcredentialssize_8',['maxCredentialsSize',['../classTinySMTP.html#a4586d4361eedac58149247e3ae648087',1,'TinySMTP']]],
+  ['mount_9',['mount',['../classfatfs_1_1FileIO.html#a8f05693c3d6941aa86b436afeeb68d8a',1,'fatfs::FileIO']]]
 ];
