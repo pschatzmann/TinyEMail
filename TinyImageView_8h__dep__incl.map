@@ -1,6 +1,6 @@
 <map id="src/TinyEMailGUI/TinyImageView.h" name="src/TinyEMailGUI/TinyImageView.h">
 <area shape="rect" id="Node000001" title="Shows a picture attachment: JPEG, PNG, GIF or BMP." alt="" coords="5,5,211,50"/>
-<area shape="rect" id="Node000002" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (240x320 screens)." alt="" coords="8,98,208,143"/>
+<area shape="rect" id="Node000002" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (portrait screens, 240x320 and larger)." alt="" coords="8,98,208,143"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,63,111,98,105,97,107,68"/>
 <area shape="rect" id="Node000003" href="$TinyEMailGUI_8h.html" title="Public header of the e&#45;mail GUI (TinyMaterialDesign, 240x320 screens)." alt="" coords="36,191,180,218"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,157,110,191,106,189,106,160"/>

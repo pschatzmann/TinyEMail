@@ -2,7 +2,7 @@ var searchData=
 [
   ['image_0',['image',['../classTinyHtml.html#a371b595d715453e7ae8162948e4d4a60',1,'TinyHtml']]],
   ['in_20arduino_1',['Installation in Arduino',['../index.html#autotoc_md3',1,'']]],
-  ['info_2',['info',['../classTinyLogger.html#a2bc9bf1e9db62131570efd9b78ad6021',1,'TinyLogger::info(const char *message)'],['../classTinyLogger.html#ade34392c590344989cedeb8ec062aa63',1,'TinyLogger::info(const String &amp;message)'],['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0a4059b0251f66a18cb56f544728796875',1,'TinyLogger::Info'],['../structTinyPart.html#ad0f064f58d6c9c35bba4997e79f729a1',1,'TinyPart::info']]],
+  ['info_2',['info',['../structTinyPart.html#ad0f064f58d6c9c35bba4997e79f729a1',1,'TinyPart::info'],['../classTinyLogger.html#a2bc9bf1e9db62131570efd9b78ad6021',1,'TinyLogger::info(const char *message)'],['../classTinyLogger.html#ade34392c590344989cedeb8ec062aa63',1,'TinyLogger::info(const String &amp;message)'],['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0a4059b0251f66a18cb56f544728796875',1,'TinyLogger::Info']]],
   ['inpsram_3',['inPsram',['../classTinyVector.html#a413278aa9716bd033bc3b40e53d43965',1,'TinyVector']]],
   ['installation_20in_20arduino_4',['Installation in Arduino',['../index.html#autotoc_md3',1,'']]],
   ['instance_5',['instance',['../classTinyLogger.html#a247538328530264cd236c1cd5e7544e3',1,'TinyLogger']]],

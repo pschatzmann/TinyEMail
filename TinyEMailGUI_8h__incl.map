@@ -1,6 +1,6 @@
 <map id="src/TinyEMailGUI.h" name="src/TinyEMailGUI.h">
 <area shape="rect" id="Node000001" title="Public header of the e&#45;mail GUI (TinyMaterialDesign, 240x320 screens)." alt="" coords="2852,5,2996,33"/>
-<area shape="rect" id="Node000002" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (240x320 screens)." alt="" coords="2817,81,3031,109"/>
+<area shape="rect" id="Node000002" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (portrait screens, 240x320 and larger)." alt="" coords="2817,81,3031,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2926,31,2926,67,2922,64,2922,36"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="1611,628,1680,655"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2913,108,2897,130,2883,154,2876,179,2878,190,2885,200,2908,217,2940,230,2978,237,3022,241,3122,238,3231,229,3342,218,3444,214,3490,215,3531,221,3566,231,3594,247,3612,267,3619,287,3620,337,3620,492,3615,502,3600,512,3548,529,3467,544,3361,558,3091,583,2772,603,2126,630,1696,642,1696,636,2126,624,2772,597,3090,577,3360,553,3466,539,3547,524,3598,507,3611,499,3615,491,3615,338,3614,288,3607,270,3590,251,3564,236,3530,226,3490,221,3444,219,3342,224,3232,234,3122,244,3022,246,2977,243,2938,235,2906,222,2881,203,2873,192,2871,179,2878,152,2893,127,2909,110"/>

@@ -9,5 +9,5 @@ var searchData=
   ['enddata_6',['endData',['../classTinySMTP.html#a2a6fd65528ca14171765126e1b5c9325',1,'TinySMTP']]],
   ['endlist_7',['endList',['../classTinyHtml.html#a8f763c58dbadc37eaa6a9529e627b08b',1,'TinyHtml']]],
   ['endmessage_8',['endMessage',['../classTinySMTP.html#a181f415a81e6baec3eef9e491839648d',1,'TinySMTP']]],
-  ['error_9',['error',['../classTinyLogger.html#ab8f3b4eb7a4954f00077c071ce1c9d1f',1,'TinyLogger::error(const char *message)'],['../classTinyLogger.html#ac019e4cc00fa75e82680158eef10d336',1,'TinyLogger::error(const String &amp;message)'],['../classTinyImageView.html#a9b38cd47ebb44e84a3d0a739a3b2e7fb',1,'TinyImageView::error()'],['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0a902b0d55fddef6f8d651fe1035b7d4bd',1,'TinyLogger::Error']]]
+  ['error_9',['error',['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0a902b0d55fddef6f8d651fe1035b7d4bd',1,'TinyLogger::Error'],['../classTinyLogger.html#ab8f3b4eb7a4954f00077c071ce1c9d1f',1,'TinyLogger::error(const char *message)'],['../classTinyLogger.html#ac019e4cc00fa75e82680158eef10d336',1,'TinyLogger::error(const String &amp;message)'],['../classTinyImageView.html#a9b38cd47ebb44e84a3d0a739a3b2e7fb',1,'TinyImageView::error()']]]
 ];

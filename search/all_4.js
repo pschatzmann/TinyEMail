@@ -3,7 +3,7 @@ var searchData=
   ['data_0',['data',['../classTinySMTP.html#aed68db6e04e1e5c556e2e812bc88e565',1,'TinySMTP::data()'],['../structTinyPart.html#a813eeacd44cf8096f2140a74a2538dc8',1,'TinyPart::data']]],
   ['datatext_1',['dataText',['../classTinySMTP.html#a0a2b50ffbc378ce2521a2e85bca2f98a',1,'TinySMTP']]],
   ['date_2',['date',['../classTinyMailStore.html#a274685ee4e6d00ea3781f8aa10709c2f',1,'TinyMailStore']]],
-  ['debug_3',['debug',['../classTinyLogger.html#aac1fc2bf6cb3f32abba4b9e06bf33089',1,'TinyLogger::debug(const char *message)'],['../classTinyLogger.html#a5eb0dac5ca2145d9a9d80a578f9d8019',1,'TinyLogger::debug(const String &amp;message)'],['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0aa603905470e2a5b8c13e96b579ef0dba',1,'TinyLogger::Debug']]],
+  ['debug_3',['debug',['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0aa603905470e2a5b8c13e96b579ef0dba',1,'TinyLogger::Debug'],['../classTinyLogger.html#aac1fc2bf6cb3f32abba4b9e06bf33089',1,'TinyLogger::debug(const char *message)'],['../classTinyLogger.html#a5eb0dac5ca2145d9a9d80a578f9d8019',1,'TinyLogger::debug(const String &amp;message)']]],
   ['decodewords_4',['decodeWords',['../structTinyText.html#ade0b33753b5ce2102986f7a29265658a',1,'TinyText']]],
   ['disk_5finitialize_5',['disk_initialize',['../classfatfs_1_1FileIO.html#a6d96b66f806dea0ce9a9c919723461e5',1,'fatfs::FileIO']]],
   ['disk_5fioctl_6',['disk_ioctl',['../classfatfs_1_1FileIO.html#a7678c7337511ebeef2e4475dd3b3f8eb',1,'fatfs::FileIO']]],

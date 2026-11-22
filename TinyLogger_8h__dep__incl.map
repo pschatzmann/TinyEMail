@@ -14,7 +14,7 @@
 <area shape="poly" id="edge24_Node000001_Node000013" title=" " alt="" coords="358,35,521,79,517,82,359,40"/>
 <area shape="rect" id="Node000003" href="$TinyMailStore_8h.html" title="Stores mails in a FAT file system, using TinyFATFS." alt="" coords="205,468,419,496"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,425,314,469,310,466,311,429"/>
-<area shape="rect" id="Node000004" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (240x320 screens)." alt="" coords="212,552,412,597"/>
+<area shape="rect" id="Node000004" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (portrait screens, 240x320 and larger)." alt="" coords="212,552,412,597"/>
 <area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="243,419,218,437,196,461,188,482,196,503,220,530,252,551,247,552,216,534,191,505,183,482,191,458,215,433,247,416"/>
 <area shape="rect" id="Node000006" href="$TinyHtmlView_8h.html" title="Simple streaming HTML renderer drawn with TinyFonts (TinyMaterialDesign widget)." alt="" coords="443,459,640,504"/>
 <area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="363,414,483,458,478,459,363,420"/>
