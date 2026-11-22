@@ -605,8 +605,34 @@ private:
   }
 
   // The theme of the screen; the app bar takes the primary colour of the theme
+  // The text of the widgets: TinyFonts Lato, for labels and buttons, body text, titles and headings
+  static tinyfonts::TinyGPUFont<RGB565>& labelFont() {
+    static tinyfonts::TinyGPUFont<RGB565> font(tinyfonts::Lato12);
+    return font;
+  }
+  static tinyfonts::TinyGPUFont<RGB565>& bodyFont() {
+    static tinyfonts::TinyGPUFont<RGB565> font(tinyfonts::Lato16);
+    return font;
+  }
+  static tinyfonts::TinyGPUFont<RGB565>& smallFont() {
+    static tinyfonts::TinyGPUFont<RGB565> font(tinyfonts::Lato8);
+    return font;
+  }
+  static tinyfonts::TinyGPUFont<RGB565>& titleFont() {
+    static tinyfonts::TinyGPUFont<RGB565> font(tinyfonts::Lato16);
+    return font;
+  }
+  static tinyfonts::TinyGPUFont<RGB565>& headlineFont() {
+    static tinyfonts::TinyGPUFont<RGB565> font(tinyfonts::Lato32);
+    return font;
+  }
+
   void applyTheme() {
-    const MaterialTheme<RGB565> theme = darkMode_ ? defaultDarkTheme<RGB565>() : defaultTheme<RGB565>();
+    MaterialTheme<RGB565> theme = darkMode_ ? defaultDarkTheme<RGB565>() : defaultTheme<RGB565>();
+    theme.typography.label = &labelFont();
+    theme.typography.body = &bodyFont();
+    theme.typography.title = &titleFont();
+    theme.typography.headline = &headlineFont();
     app_.screen().setTheme(theme);
     applyFieldColors();
     app_.screen().setBackgroundColor(screenColor());
@@ -907,7 +933,8 @@ private:
           }
           row.setDivider(true);
           row.setDividerInset(false);  // full width of the card
-          row.setTypographyRole(TypographyRole::kTitle);  // the subject: larger than the address
+          row.setTitleFont(labelFont());   // the subject: Lato12
+          row.setSubtitleFont(smallFont());  // the address: Lato8
           row.onClick = [this, mail]() { showMail(mail); };
           return row;
         });
