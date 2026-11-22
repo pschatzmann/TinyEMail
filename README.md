@@ -46,6 +46,8 @@ void setup() {
 - [Text and encodings](https://github.com/pschatzmann/TinyEMail/wiki/Text-and-encodings): charsets, base64, quoted-printable, encoded words
 - [Classes](https://github.com/pschatzmann/TinyEMail/wiki/Classes): the classes of the library
 - [Examples](https://github.com/pschatzmann/TinyEMail/wiki/Examples): the example sketches
+- [GUI](https://github.com/pschatzmann/TinyEMail/wiki/GUI): the e-mail client for the 240 x 320 display, with screenshots
+- [Dependencies](https://github.com/pschatzmann/TinyEMail/wiki/Dependencies): the libraries and tools needed
 - [Desktop build](https://github.com/pschatzmann/TinyEMail/wiki/Desktop-build): CMake, unit tests and the mail server test
 - [Notes](https://github.com/pschatzmann/TinyEMail/wiki/Notes): limitations
 - [Class documentation (Doxygen)](https://pschatzmann.github.io/TinyEMail/annotated.html): API reference for all classes

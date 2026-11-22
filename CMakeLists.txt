@@ -29,14 +29,23 @@ endif()
 
 option(TINYEMAIL_BUILD_TESTS "Build the desktop unit tests" ${_tinyemail_top_level})
 option(TINYEMAIL_BUILD_DOCS "Add the 'docs' target that runs Doxygen" ${_tinyemail_top_level})
+option(TINYEMAIL_BUILD_EXAMPLES "Build the desktop examples (Send, Receive)" ${_tinyemail_top_level})
+option(TINYEMAIL_BUILD_GUI "Build the MailGUI example in an SDL2 window (needs SDL2)" ${_tinyemail_top_level})
+
+# TLS (WiFiClientSecure) is used by the integration test against a TLS server
+# and by the examples. OFF avoids building wolfSSL / TinyTLS.
+if(TINYEMAIL_BUILD_EXAMPLES)
+  set(_tinyemail_tls_default ON)
+else()
+  set(_tinyemail_tls_default OFF)
+endif()
+option(TINYEMAIL_TLS "Build the emulator with TLS (WiFiClientSecure)" ${_tinyemail_tls_default})
 
 # ---- Arduino-Emulator: the Arduino core API (Client, Stream, Print) on the desktop
 # Fetched from GitHub; override with
 # -DFETCHCONTENT_SOURCE_DIR_ARDUINO_EMULATOR=/path/to/checkout.
-if(TINYEMAIL_BUILD_TESTS)
-  # TLS (WiFiClientSecure) is only needed by the integration test against a TLS server
-  option(TINYEMAIL_TLS "Build the emulator with TLS (WiFiClientSecure)" OFF)
-  set(USE_HTTPS ${TINYEMAIL_TLS} CACHE BOOL "" FORCE)  # OFF avoids building wolfSSL / TinyTLS
+if(TINYEMAIL_BUILD_TESTS OR TINYEMAIL_BUILD_EXAMPLES)
+  set(USE_HTTPS ${TINYEMAIL_TLS} CACHE BOOL "" FORCE)
   # Pinned to the revision the other pschatzmann desktop libraries are tested with.
   FetchContent_Declare(arduino_emulator
     GIT_REPOSITORY https://github.com/pschatzmann/Arduino-Emulator.git
@@ -53,6 +62,80 @@ endif()
 if(TINYEMAIL_BUILD_TESTS)
   enable_testing()
   add_subdirectory(tests)
+endif()
+
+# ---- examples ---------------------------------------------------------------
+# MailGUI uses TinyMaterialDesign (TinyGPU, SDL2) on the desktop.
+if(TINYEMAIL_BUILD_GUI)
+  find_package(SDL2 REQUIRED)
+  set(TMD_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+  set(TMD_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+  set(TINYEMAIL_TMD_DIR "" CACHE PATH
+      "Local TinyMaterialDesign checkout. Default: ../TinyMaterialDesign if present, otherwise fetched from GitHub")
+  if(NOT TINYEMAIL_TMD_DIR AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../TinyMaterialDesign/CMakeLists.txt")
+    set(TINYEMAIL_TMD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../TinyMaterialDesign" CACHE PATH "" FORCE)
+  endif()
+  if(TINYEMAIL_TMD_DIR)
+    add_subdirectory("${TINYEMAIL_TMD_DIR}" "${CMAKE_BINARY_DIR}/TinyMaterialDesign")
+  else()
+    FetchContent_Declare(tinymaterialdesign
+      GIT_REPOSITORY https://github.com/pschatzmann/TinyMaterialDesign.git
+      GIT_TAG main)
+    FetchContent_MakeAvailable(tinymaterialdesign)
+  endif()
+
+  # TinyFonts renders the text of the mail views (MailGUI/HtmlView.h).
+  set(TINYEMAIL_TINYFONTS_DIR "" CACHE PATH
+      "Local TinyFonts checkout. Default: ../TinyFonts if present, otherwise fetched from GitHub")
+  if(NOT TINYEMAIL_TINYFONTS_DIR AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../TinyFonts/CMakeLists.txt")
+    set(TINYEMAIL_TINYFONTS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../TinyFonts" CACHE PATH "" FORCE)
+  endif()
+  if(TINYEMAIL_TINYFONTS_DIR)
+    add_subdirectory("${TINYEMAIL_TINYFONTS_DIR}" "${CMAKE_BINARY_DIR}/TinyFonts")
+  else()
+    FetchContent_Declare(tinyfonts
+      GIT_REPOSITORY https://github.com/pschatzmann/TinyFonts.git
+      GIT_TAG main)
+    FetchContent_MakeAvailable(tinyfonts)
+  endif()
+
+  # TinyFATFS stores the mails (TinyEMail/TinyMailStore.h).
+  set(TINYEMAIL_TINYFATFS_DIR "" CACHE PATH
+      "Local TinyFATFS checkout. Default: ../TinyFATFS if present, otherwise fetched from GitHub")
+  if(NOT TINYEMAIL_TINYFATFS_DIR AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../TinyFATFS/CMakeLists.txt")
+    set(TINYEMAIL_TINYFATFS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../TinyFATFS" CACHE PATH "" FORCE)
+  endif()
+  set(FATFS_EXAMPES OFF CACHE BOOL "" FORCE)
+  set(FATFS_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+  set(FATFS_SANITIZE OFF CACHE BOOL "" FORCE)
+  if(TINYEMAIL_TINYFATFS_DIR)
+    add_subdirectory("${TINYEMAIL_TINYFATFS_DIR}" "${CMAKE_BINARY_DIR}/TinyFATFS")
+  else()
+    FetchContent_Declare(tinyfatfs
+      GIT_REPOSITORY https://github.com/pschatzmann/TinyFATFS.git
+      GIT_TAG main)
+    FetchContent_MakeAvailable(tinyfatfs)
+  endif()
+
+  # TinyJPEG decodes the JPEG pictures of the attachments (via TinyGPU's JPEGParser).
+  set(TINYEMAIL_TINYJPEG_DIR "" CACHE PATH
+      "Local TinyJPEG checkout. Default: ../TinyJPEG if present, otherwise fetched from GitHub")
+  if(NOT TINYEMAIL_TINYJPEG_DIR AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../TinyJPEG/CMakeLists.txt")
+    set(TINYEMAIL_TINYJPEG_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../TinyJPEG" CACHE PATH "" FORCE)
+  endif()
+  set(TINYJPEG_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+  if(TINYEMAIL_TINYJPEG_DIR)
+    add_subdirectory("${TINYEMAIL_TINYJPEG_DIR}" "${CMAKE_BINARY_DIR}/TinyJPEG")
+  else()
+    FetchContent_Declare(tinyjpeg
+      GIT_REPOSITORY https://github.com/pschatzmann/TinyJPEG.git
+      GIT_TAG main)
+    FetchContent_MakeAvailable(tinyjpeg)
+  endif()
+endif()
+
+if(TINYEMAIL_BUILD_EXAMPLES OR TINYEMAIL_BUILD_GUI)
+  add_subdirectory(examples)
 endif()
 
 # ---- documentation ------------------------------------------------------------
