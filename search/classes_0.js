@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iterator_0',['Iterator',['../classTinyMailParts_1_1Iterator.html',1,'TinyMailParts']]]
+  ['config_0',['Config',['../structTinyEMailGUI_1_1Config.html',1,'TinyEMailGUI']]]
 ];

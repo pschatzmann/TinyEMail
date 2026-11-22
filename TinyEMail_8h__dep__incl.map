@@ -1,0 +1,13 @@
+<map id="src/TinyEMail.h" name="src/TinyEMail.h">
+<area shape="rect" id="Node000001" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="196,5,317,33"/>
+<area shape="rect" id="Node000002" href="$TinyMailStore_8h.html" title="Stores mails in a FAT file system, using TinyFATFS." alt="" coords="5,90,220,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,43,137,91,134,87,222,39"/>
+<area shape="rect" id="Node000003" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (240x320 screens)." alt="" coords="156,174,357,218"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="258,47,259,174,254,173,255,50"/>
+<area shape="rect" id="Node000005" href="$TinyHtmlView_8h.html" title="Simple streaming HTML renderer drawn with TinyFonts (TinyMaterialDesign widget)." alt="" coords="294,81,491,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="291,39,359,80,354,81,291,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,123,224,172,220,174,145,128"/>
+<area shape="rect" id="Node000004" href="$TinyEMailGUI_8h.html" title="Public header of the e&#45;mail GUI (TinyMaterialDesign, 240x320 screens)." alt="" coords="184,266,329,294"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="258,232,259,267,254,264,255,236"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="350,133,290,176,287,171,345,136"/>
+</map>

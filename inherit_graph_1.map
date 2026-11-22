@@ -1,13 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,109,74,137"/>
-<area shape="rect" id="Node000001" href="$classTinyBufferStream.html" title="A read only Stream over bytes in memory, e.g. binary data for an attachment." alt="" coords="122,5,257,33"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="60,96,88,69,120,44,147,32,143,36,123,48,91,73,65,99"/>
-<area shape="rect" id="Node000002" href="$classTinyIMAP.html" title="IMAP client for Gmail: transport plus IMAP commands." alt="" coords="148,57,230,85"/>
-<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="87,104,150,83,146,87,90,109"/>
-<area shape="rect" id="Node000003" href="$classTinyMailData.html" title="The data of one part of a mail, decoded while it is read (base64 and quoted&#45;printable)...." alt="" coords="135,109,244,137"/>
-<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="88,121,137,122,132,125,90,126"/>
-<area shape="rect" id="Node000004" href="$classTinySMTP.html" title="SMTP connection with the commands for sending mail." alt="" coords="147,161,232,189"/>
-<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="88,137,150,159,145,162,88,143"/>
-<area shape="rect" id="Node000005" href="$classTinyTextStream.html" title="A read only Stream over a text, e.g. the body of a mail." alt="" coords="128,213,251,241"/>
-<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="63,146,91,173,123,198,148,213,142,213,120,203,88,177,62,151"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,32,57,60"/>
+<area shape="rect" id="Node000001" href="$classTinyHtml.html" title="Writes HTML to a Print. Text is escaped, so user input cannot add tags. The calls can be chained:" alt="" coords="123,5,204,33"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="71,35,125,26,121,29,72,40"/>
+<area shape="rect" id="Node000002" href="$classTinySMTPBody.html" title="A Print that writes the body of a message started with TinySMTP::beginMessage(). The bytes are quoted..." alt="" coords="105,57,223,85"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="72,51,107,59,102,61,72,56"/>
 </map>

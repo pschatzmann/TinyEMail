@@ -1,16 +1,26 @@
 <map id="src/TinyEMail/TinyVector.h" name="src/TinyEMail/TinyVector.h">
-<area shape="rect" id="Node000001" title="A small vector for Arduino. Its memory comes from PSRAM when the board has it, otherwise from the nor..." alt="" coords="12,5,205,33"/>
-<area shape="rect" id="Node000002" href="$TinyMail_8h.html" title="The mail and attachment structures used by TinyEMail and TinySMTP." alt="" coords="18,81,199,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,46,111,81,106,80,108,51"/>
-<area shape="rect" id="Node000003" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="60,308,181,336"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,121,51,149,24,184,14,202,9,221,9,240,16,259,28,274,43,287,79,306,74,309,40,291,24,278,11,261,4,241,4,221,9,200,19,181,47,145,80,116"/>
-<area shape="rect" id="Node000004" href="$TinyMIME_8h.html" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="26,232,215,260"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="81,121,62,151,58,167,60,183,78,210,102,231,97,232,74,213,55,185,52,167,57,148,83,117"/>
-<area shape="rect" id="Node000005" href="$TinyMIMEReader_8h.html" title="Reads a received message as a stream: the parts of the mail come one after the other,..." alt="" coords="69,157,302,184"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="133,117,175,156,169,157,133,122"/>
-<area shape="rect" id="Node000006" href="$TinySMTP_8h.html" title="Header&#45;only SMTP client for Gmail with an Arduino style API." alt="" coords="243,232,430,260"/>
-<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="213,103,269,121,295,136,317,155,329,173,336,195,339,233,335,231,331,196,324,176,313,158,292,140,267,126,214,108"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="122,274,123,309,118,306,118,278"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="166,194,134,234,130,230,162,198"/>
-<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="286,265,160,310,158,305,281,265"/>
+<area shape="rect" id="Node000001" title="A small vector for Arduino. Its memory comes from PSRAM when the board has it, otherwise from the nor..." alt="" coords="148,5,341,33"/>
+<area shape="rect" id="Node000002" href="$TinyMail_8h.html" title="The mail and attachment structures used by TinyEMail and TinySMTP." alt="" coords="154,81,335,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,46,247,81,242,80,244,51"/>
+<area shape="rect" id="Node000003" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="196,308,317,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,121,187,149,160,184,150,202,145,221,145,240,152,259,164,274,179,287,215,307,210,308,176,291,160,278,148,261,140,241,140,221,145,200,155,181,183,145,217,116"/>
+<area shape="rect" id="Node000008" href="$TinyMIME_8h.html" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="162,232,351,260"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="216,121,198,151,194,167,196,183,214,210,239,231,233,232,211,213,191,185,188,167,193,148,219,117"/>
+<area shape="rect" id="Node000009" href="$TinyMIMEReader_8h.html" title="Reads a received message as a stream: the parts of the mail come one after the other,..." alt="" coords="205,157,438,184"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="269,117,311,156,306,157,269,122"/>
+<area shape="rect" id="Node000010" href="$TinySMTP_8h.html" title="Header&#45;only SMTP client for Gmail with an Arduino style API." alt="" coords="379,232,566,260"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="349,103,405,121,431,136,453,155,465,173,472,195,476,233,471,231,467,196,461,176,449,158,428,140,403,126,351,108"/>
+<area shape="rect" id="Node000004" href="$TinyMailStore_8h.html" title="Stores mails in a FAT file system, using TinyFATFS." alt="" coords="5,392,220,420"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,346,137,394,134,389,222,342"/>
+<area shape="rect" id="Node000005" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (240x320 screens)." alt="" coords="156,476,357,521"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="258,349,259,477,254,475,255,353"/>
+<area shape="rect" id="Node000007" href="$TinyHtmlView_8h.html" title="Simple streaming HTML renderer drawn with TinyFonts (TinyMaterialDesign widget)." alt="" coords="294,384,491,428"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="291,341,359,383,354,384,291,347"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="146,425,224,475,220,477,145,431"/>
+<area shape="rect" id="Node000006" href="$TinyEMailGUI_8h.html" title="Public header of the e&#45;mail GUI (TinyMaterialDesign, 240x320 screens)." alt="" coords="184,569,329,597"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="258,535,259,570,254,567,255,539"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="350,436,290,478,287,474,345,439"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="258,273,259,308,254,307,255,278"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="299,198,270,234,266,230,302,194"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="418,267,296,310,294,305,422,264"/>
 </map>

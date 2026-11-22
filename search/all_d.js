@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['open_0',['open',['../classTinyHtml.html#af3a64aecec32845b412b9e6342a230b6',1,'TinyHtml']]],
-  ['operator_20bool_1',['operator bool',['../classTinyIMAP.html#a35163a1ab9e58b1ace05ae0624795a23',1,'TinyIMAP::operator bool()'],['../classTinySMTP.html#a55a236f07f82a77318e847f3f512361a',1,'TinySMTP::operator bool()']]],
-  ['operator_21_3d_2',['operator!=',['../classTinyMailParts_1_1Iterator.html#ac4f0b425afd1b36469b10202cbc7b6ba',1,'TinyMailParts::Iterator']]],
-  ['operator_2a_3',['operator*',['../classTinyMailParts_1_1Iterator.html#aaa41a4809a5fde1674843cd164885924',1,'TinyMailParts::Iterator']]],
-  ['operator_2b_2b_4',['operator++',['../classTinyMailParts_1_1Iterator.html#abb05c04e0e864629357d9b303596841b',1,'TinyMailParts::Iterator']]],
-  ['operator_3d_5',['operator=',['../classTinyEMail.html#aded6f8662b715e5aaacbc9c916c7a768',1,'TinyEMail::operator=()'],['../classTinyMailData.html#ae46616c7a34bc1850b120b74f8de2ade',1,'TinyMailData::operator=()'],['../classTinyMailParts.html#ab31158063c8e46951375dfeccdec2b4e',1,'TinyMailParts::operator=(const TinyMailParts &amp;)=delete'],['../classTinyMailParts.html#a4292ec2066fb20ee9a82d9063b251e00',1,'TinyMailParts::operator=(TinyMailParts &amp;&amp;)=default'],['../classTinyVector.html#aa72b1ae795b56b98ce3edaa9525470d5',1,'TinyVector::operator=(const TinyVector &amp;other)'],['../classTinyVector.html#a7538595f1dd7ac062bdb8d2a8574e7cc',1,'TinyVector::operator=(TinyVector &amp;&amp;other) noexcept']]],
-  ['operator_5b_5d_6',['operator[]',['../classTinyVector.html#a0a785b23c64e2d4d60e45acf8e02cdd2',1,'TinyVector::operator[](size_t index)'],['../classTinyVector.html#af2bbc62ab2074c9d84f8cd6ea802d6fb',1,'TinyVector::operator[](size_t index) const']]]
+  ['mail_0',['Mail',['../classTinyEMail.html#a17655144f2df1bc44d5059d706948d1f',1,'TinyEMail']]],
+  ['mailaddress_1',['mailAddress',['../structTinyEMailGUI_1_1Config.html#a673d81fac3541f1a443b761b043b1ad6',1,'TinyEMailGUI::Config']]],
+  ['mailfrom_2',['mailFrom',['../classTinySMTP.html#a3d0ec51c7ab0a8f2eee2ad9e8c440cee',1,'TinySMTP']]],
+  ['mailpassword_3',['mailPassword',['../structTinyEMailGUI_1_1Config.html#a0682cf3b0bdd85ea9097f1985b79dce7',1,'TinyEMailGUI::Config']]],
+  ['markasread_4',['markAsRead',['../structTinyMail.html#ac575bfcd7df4f38b089e847d19f36403',1,'TinyMail']]],
+  ['markasunread_5',['markAsUnread',['../structTinyMail.html#ac60b67d3c8651ecb0dd0579e3b33e92a',1,'TinyMail']]],
+  ['markflagged_6',['markFlagged',['../structTinyMail.html#aacfeb5c5fbc7d06e0550093b24e1c4b0',1,'TinyMail']]],
+  ['maxcredentialssize_7',['maxCredentialsSize',['../classTinySMTP.html#a4586d4361eedac58149247e3ae648087',1,'TinySMTP']]],
+  ['mount_8',['mount',['../classfatfs_1_1FileIO.html#a8f05693c3d6941aa86b436afeeb68d8a',1,'fatfs::FileIO']]]
 ];

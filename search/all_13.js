@@ -1,7 +1,29 @@
 var searchData=
 [
-  ['uid_0',['uid',['../structTinyMail.html#a65511250e77be279c2cecb51a101f315',1,'TinyMail']]],
-  ['unflagged_1',['Unflagged',['../structTinyMail.html#a9cea87a419835233435e19dd9a838c18a2b5d44ce2841dfc47fa87ab9160b1cc4',1,'TinyMail']]],
-  ['unmarkflagged_2',['unmarkFlagged',['../structTinyMail.html#a2c1f7ea1de8a785bbc84a926a6eaf5ed',1,'TinyMail']]],
-  ['unread_3',['unread',['../classTinyLineSource.html#a1ea5c32fbe2b03dcd84949b6ea0c3efa',1,'TinyLineSource::unread()'],['../classTinyEMail.html#a121a45aa047426a081914d259c65e33ca53770fd374062f5b825b25dcd60fb498',1,'TinyEMail::Unread'],['../structTinyMail.html#a9cea87a419835233435e19dd9a838c18a53770fd374062f5b825b25dcd60fb498',1,'TinyMail::Unread']]]
+  ['samename_0',['sameName',['../structTinyMail.html#a18e62aebf5dd62b53673e34b8e37d6a5',1,'TinyMail']]],
+  ['save_1',['save',['../classTinyMailStore.html#a898e65d5a26a5f20c0ee90d50101983b',1,'TinyMailStore']]],
+  ['sdchipselect_2',['sdChipSelect',['../structTinyEMailGUI_1_1Config.html#a2e7e593dc36577d9e90fb56d9ff073ca',1,'TinyEMailGUI::Config']]],
+  ['searchlist_3',['searchList',['../classTinyIMAP.html#a0f98255a00f4c8693e8f65a493b598ea',1,'TinyIMAP']]],
+  ['sector_5fcount_4',['sector_count',['../classfatfs_1_1FileIO.html#add643096ef93cbf4a51d82895616bd96',1,'fatfs::FileIO']]],
+  ['sector_5fsize_5',['sector_size',['../classfatfs_1_1FileIO.html#a0dfb225b8a6e877ff172abf5164f39c0',1,'fatfs::FileIO']]],
+  ['seek_5fto_6',['seek_to',['../classfatfs_1_1FileIO.html#a20e5c5689c0f39d49e529e568297139c',1,'fatfs::FileIO']]],
+  ['select_7',['select',['../classTinyIMAP.html#a723daa420b524c6cc241ca3cbb521132',1,'TinyIMAP']]],
+  ['send_8',['send',['../classTinyEMail.html#afbaa4b05c46547dd4aad4cd33ddc506e',1,'TinyEMail::send(const Mail &amp;mail)'],['../classTinyEMail.html#a707ee9c90d37f4e6cdc71eb3a652e42d',1,'TinyEMail::send(const char *to, const char *subject, Stream &amp;content, const char *contentType=&quot;text/plain&quot;)'],['../classTinyEMail.html#ad5c3f6b8c19930fcd96a99d13a7320f6',1,'TinyEMail::send(const char *to, const char *subject, const char *body)']]],
+  ['sendwith_9',['sendwith',['../classTinyEMail.html#ae75028d2009c5c688ce8d8925382c11e',1,'TinyEMail::sendWith(const Mail &amp;mail, const char *contentType, Writer writer)'],['../classTinyEMail.html#a3a3b654d05e78ed1c76065fee74749c1',1,'TinyEMail::sendWith(const char *to, const char *subject, const char *contentType, Writer writer)']]],
+  ['setbackgroundcolor_10',['setBackgroundColor',['../classTinyHtmlView.html#a7e5c865cde8f3a8d95f4df860efa2f5b',1,'TinyHtmlView']]],
+  ['setflag_11',['setFlag',['../classTinyIMAP.html#a1574c18f21777387889a85a153db344b',1,'TinyIMAP']]],
+  ['setimapserver_12',['setImapServer',['../classTinyEMail.html#ac423671910c7debbcfd8672d2bce3f99',1,'TinyEMail']]],
+  ['setlevel_13',['setLevel',['../classTinyLogger.html#a579114da9a74f886167dc96f8896d142',1,'TinyLogger']]],
+  ['setlimits_14',['setLimits',['../classTinyIMAP.html#a3ab81c53a72a85eeb52c45485dfeccde',1,'TinyIMAP']]],
+  ['setmaxmessagesize_15',['setMaxMessageSize',['../classTinyEMail.html#a84fa39eee7e78a3276bb86e55127e54a',1,'TinyEMail']]],
+  ['setsmalltext_16',['setSmallText',['../classTinyHtmlView.html#a5ae0426bc09d2f536ebc68dc75d1d680',1,'TinyHtmlView']]],
+  ['setsmtpserver_17',['setSmtpServer',['../classTinyEMail.html#a84325f03045d9f71e812873a3bf07f25',1,'TinyEMail']]],
+  ['setsource_18',['setSource',['../classTinyHtmlView.html#aeb717bace6d14ca78d4454be8efdd6fa',1,'TinyHtmlView']]],
+  ['settimeout_19',['setTimeout',['../classTinyEMail.html#adea9af4fe359916f7b24b7cd1233f4a4',1,'TinyEMail']]],
+  ['size_20',['size',['../classTinyVector.html#aab709e8a79aa1875a45cdb747c778795',1,'TinyVector']]],
+  ['skippart_21',['skipPart',['../classTinyMIMEReader.html#a07df0665c7f508fd930f0e8cb0d11c58',1,'TinyMIMEReader']]],
+  ['status_22',['status',['../classfatfs_1_1FileIO.html#a5bee059c2faddbde986ead6419cb9d9f',1,'fatfs::FileIO::status'],['../index.html#autotoc_md1',1,'Status']]],
+  ['store_23',['store',['../classTinyEMailGUI.html#aa36912d103cdf5f3c8ebfcbd3481888a',1,'TinyEMailGUI']]],
+  ['stream_24',['stream',['../structTinyMailAttachment.html#aac7c3b33fc523bf4f5f03220bb7f4bd4',1,'TinyMailAttachment']]],
+  ['subject_25',['subject',['../structTinyMail.html#a5b80ba87eb2f980b5b315036e3f8d71b',1,'TinyMail::subject'],['../classTinyMailStore.html#a96c182cfd7d8fe3a49feb7e576e1f5f6',1,'TinyMailStore::subject()']]]
 ];

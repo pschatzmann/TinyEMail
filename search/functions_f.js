@@ -8,5 +8,6 @@ var searchData=
   ['readreply_5',['readReply',['../classTinySMTP.html#a170a090f9d35f6c5240863e2d5d7b7bb',1,'TinySMTP']]],
   ['readstring_6',['readString',['../classTinyMailData.html#a308402a6523628043a4a1f2722720919',1,'TinyMailData']]],
   ['receive_7',['receive',['../classTinyEMail.html#a71dde125201c085046661e8e8dac40df',1,'TinyEMail']]],
-  ['reserve_8',['reserve',['../classTinyVector.html#a5afc313ff20dfc60c404f176d8999394',1,'TinyVector']]]
+  ['refresh_8',['refresh',['../classTinyEMailGUI.html#a0be278bd5f7f170ce06d8b166ff1b26f',1,'TinyEMailGUI']]],
+  ['reserve_9',['reserve',['../classTinyVector.html#a5afc313ff20dfc60c404f176d8999394',1,'TinyVector']]]
 ];

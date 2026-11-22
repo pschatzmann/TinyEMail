@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['stream_0',['stream',['../structTinyMailAttachment.html#aac7c3b33fc523bf4f5f03220bb7f4bd4',1,'TinyMailAttachment']]],
-  ['subject_1',['subject',['../structTinyMail.html#a5b80ba87eb2f980b5b315036e3f8d71b',1,'TinyMail']]]
+  ['mailaddress_0',['mailAddress',['../structTinyEMailGUI_1_1Config.html#a673d81fac3541f1a443b761b043b1ad6',1,'TinyEMailGUI::Config']]],
+  ['mailpassword_1',['mailPassword',['../structTinyEMailGUI_1_1Config.html#a0682cf3b0bdd85ea9097f1985b79dce7',1,'TinyEMailGUI::Config']]],
+  ['maxcredentialssize_2',['maxCredentialsSize',['../classTinySMTP.html#a4586d4361eedac58149247e3ae648087',1,'TinySMTP']]]
 ];

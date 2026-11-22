@@ -1,5 +1,15 @@
 <map id="src/TinyEMail/TinyMIME.h" name="src/TinyEMail/TinyMIME.h">
-<area shape="rect" id="Node000001" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="5,5,194,33"/>
-<area shape="rect" id="Node000002" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="39,81,160,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,102,82,97,80,98,51"/>
+<area shape="rect" id="Node000001" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="162,5,351,33"/>
+<area shape="rect" id="Node000002" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="196,81,317,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,46,259,81,254,80,255,51"/>
+<area shape="rect" id="Node000003" href="$TinyMailStore_8h.html" title="Stores mails in a FAT file system, using TinyFATFS." alt="" coords="5,165,220,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,119,137,167,134,162,222,115"/>
+<area shape="rect" id="Node000004" href="$TinyEMailGUI_2TinyEMailGUI_8h.html" title="E&#45;mail client with a GUI for TinyMaterialDesign (240x320 screens)." alt="" coords="156,249,357,294"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="258,122,259,250,254,248,255,126"/>
+<area shape="rect" id="Node000006" href="$TinyHtmlView_8h.html" title="Simple streaming HTML renderer drawn with TinyFonts (TinyMaterialDesign widget)." alt="" coords="294,157,491,201"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="291,114,359,156,354,157,291,120"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,198,224,248,220,250,145,204"/>
+<area shape="rect" id="Node000005" href="$TinyEMailGUI_8h.html" title="Public header of the e&#45;mail GUI (TinyMaterialDesign, 240x320 screens)." alt="" coords="184,342,329,370"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="258,308,259,343,254,340,255,312"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="350,209,290,251,287,247,345,212"/>
 </map>
