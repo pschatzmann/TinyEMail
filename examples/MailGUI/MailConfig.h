@@ -16,3 +16,11 @@
 // Chip select of the SD card used for the mail folders (ESP32 only).
 // Adjust it to the SD slot of your board.
 #define MAILGUI_SD_CS 10
+
+// The size of the desktop window (the board). The GUI lays out for any portrait size.
+#ifndef MAILGUI_WIDTH
+#define MAILGUI_WIDTH 240
+#endif
+#ifndef MAILGUI_HEIGHT
+#define MAILGUI_HEIGHT 320
+#endif

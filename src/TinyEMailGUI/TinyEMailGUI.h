@@ -1,6 +1,6 @@
 /**
  * @file TinyEMailGUI.h
- * @brief E-mail client with a GUI for TinyMaterialDesign (240x320 screens).
+ * @brief E-mail client with a GUI for TinyMaterialDesign (portrait screens, 240x320 and larger).
  *
  * Screens:
  *   - list of the stored mails (subject and sender); the menu (top right) has
@@ -167,6 +167,7 @@ class TinyEMailGUI {
 
   /// Opens the store and adds the widgets to the screen. Returns false if the SD card is missing.
   bool begin() {
+    layout();
     bool ok = store_.begin(storage_);
     loadSetup();
 
@@ -176,7 +177,6 @@ class TinyEMailGUI {
     wifi_.setConnected("Desktop");  // the desktop uses the network of the computer
 #endif
     wifiPage_.setWifi(&wifi_);
-    wifiPage_.bounds = Bounds(0, kBarH, 240, 320 - kBarH);
     wifiPage_.onDone = [this]() { showList(); };
     app_.screen().addWidget(wifiPage_);
     wifiPage_.build();
@@ -248,14 +248,67 @@ class TinyEMailGUI {
   void refresh() { showList(); }
 
  private:
-  // ---- layout (portrait 240x320) -------------------------------------------------
+  // ---- layout ------------------------------------------------------------------
+  // The positions are computed from the size of the screen: full-width fields with a
+  // margin of 12, the buttons side by side, the keyboard at the bottom.
+
+  // Sets the bounds of all widgets for the size of the screen
+  void layout() {
+    w_ = app_.width();
+    h_ = app_.height();
+    textW_ = w_ - 12;
+    cardW_ = w_ - 24;
+    const int32_t kbH = h_ * 88 / 320;  // the keyboard is 88 pixels on the 320 pixel high screen
+
+    appBar_.bounds = Bounds(0, 0, w_, kBarH);
+    menuButton_.bounds = Bounds(w_ - kBarH, 4, kBarH - 8, kBarH - 8);
+    menu_.bounds = Bounds(w_ - 150, kBarH, 150, 6 * 40);
+    for (int i = 0; i < 6; i++) {
+      ListItem<RGB565>* items[] = {&fetchItem_, &composeItem_, &inboxItem_, &sentItem_, &setupItem_, &exitItem_};
+      items[i]->bounds = menu_.itemRect(i);
+    }
+    listView_.bounds = Bounds(0, kBarH + 8, w_, h_ - kBarH - 8);
+    mailView_.bounds = Bounds(0, kBarH, w_, h_ - kBarH);
+    backButton_.bounds = Bounds(4, 4, kBarH - 8, kBarH - 8);
+
+    loginError_.bounds = Bounds(12, kBarH + 8, cardW_, 32);
+    addressField_.bounds = Bounds(12, 100, cardW_, 40);
+    passwordField_.bounds = Bounds(12, 146, cardW_, 40);
+    keyboard_.bounds = Bounds(0, h_ - kbH, w_, kbH);
+    placeLoginButtons(194);
+
+    toField_.bounds = Bounds(12, 62, cardW_, 36);
+    subjectField_.bounds = Bounds(12, 106, cardW_, 34);
+    bodyField_.bounds = Bounds(12, 144, cardW_, h_ - 44 - 8 - 144);
+
+    wifiPage_.bounds = Bounds(0, kBarH, w_, h_ - kBarH);
+
+    setupDialog_.bounds = Bounds(4, 4, w_ - 8, h_ - 8);
+    darkLabel_.bounds = Bounds(16, 56, w_ - 90, 20);
+    darkSwitch_.bounds = Bounds(w_ - 70, 52, 52, 32);
+    hostField_.bounds = Bounds(16, 100, w_ - 90, 40);
+    portField_.bounds = Bounds(w_ - 66, 100, 50, 40);
+    smtpHostField_.bounds = Bounds(16, 148, w_ - 90, 40);
+    smtpPortField_.bounds = Bounds(w_ - 66, 148, 50, 40);
+    setupSaveButton_.bounds = Bounds(16, 200, (w_ - 40) / 2, 36);
+    setupCancelButton_.bounds = Bounds(16 + (w_ - 40) / 2 + 8, 200, (w_ - 40) / 2, 36);
+  }
+
+  // The sign in (or send) and cancel buttons side by side, at height y
+  void placeLoginButtons(int32_t y) {
+    const int32_t half = (cardW_ - 8) / 2;
+    signInButton_.bounds = Bounds(12, y, half, 36);
+    cancelButton_.bounds = Bounds(12 + half + 8, y, half, 36);
+  }
   static constexpr int32_t kBarH = 56;
   static constexpr int32_t kRowH = 56;        // a mail row: subject and sender
-  static constexpr int32_t kCardW = 216;      // width of a mail card in the list (screen: 240)
   static constexpr int32_t kChipH = 20;       // an attachment badge in the mail view
   static constexpr int kPoolSize = 8;         // MailRows that are relabeled for the visible rows
   static constexpr int kMaxAttachments = 4;   // attachment rows shown per mail
-  static constexpr int32_t kTextW = 228;      // mail text: leaves room for the scroll bar
+  int32_t w_ = 240;          // the size of the screen (set by layout())
+  int32_t h_ = 320;
+  int32_t textW_ = 228;      // mail text: leaves room for the scroll bar
+  int32_t cardW_ = 216;      // width of a mail card in the list
 
   enum class FetchStatus { kOk, kNoWifi, kLoginFailed };
   enum class View { kList, kMail, kAttachment };
@@ -270,7 +323,7 @@ class TinyEMailGUI {
 #endif
   TinyMailStore store_;
 
-  AppBar<RGB565> appBar_{Bounds(0, 0, 240, kBarH), "Mails"};
+  AppBar<RGB565> appBar_{Bounds(0, 0, 240, kBarH), "Mails"};  // the sizes are set by layout()
   IconButton<RGB565> menuButton_;
   Menu<RGB565> menu_;
   ListItem<RGB565> fetchItem_;
@@ -496,22 +549,22 @@ class TinyEMailGUI {
   // Lays out the mail view top to bottom: header, divider, body, then the
   // attachment badges (wrapped in rows). A badge is as wide as its name plus padding.
   void layoutMail(const String& header, const String& path, bool plain, bool picture = false) {
-    mailHeader_.bounds = Bounds(0, kBarH, kTextW, 0);
+    mailHeader_.bounds = Bounds(0, kBarH, textW_, 0);
     mailHeader_.setSource(header, store_.fs(), "", true);
     int32_t y = mailHeader_.bounds.y + mailHeader_.bounds.h;
 
     if (picture) {
       bodyWidget_ = &imageView_;
-      imageView_.bounds = Bounds(0, y, kTextW, 0);
+      imageView_.bounds = Bounds(0, y, textW_, 0);
       imageView_.layout();  // sets the height of the picture
     } else {
       bodyWidget_ = &mailBody_;
-      mailBody_.bounds = Bounds(0, y, kTextW, 0);
+      mailBody_.bounds = Bounds(0, y, textW_, 0);
       mailBody_.setSource("", store_.fs(), path, plain);  // sets the height of the body
     }
     y = bodyWidget_->bounds.y + bodyWidget_->bounds.h + 12;
 
-    const int32_t maxX = kTextW - 12;
+    const int32_t maxX = textW_ - 12;
     int32_t x = 12;
     int32_t rowY = y;
     for (int k = 0; k < attachmentCount_; k++) {
@@ -534,8 +587,7 @@ class TinyEMailGUI {
   void showLogin(const char* message) {
     view_ = View::kList;
     signInButton_.setLabel("Sign in");
-    signInButton_.bounds = Bounds(12, 194, 104, 36);
-    cancelButton_.bounds = Bounds(124, 194, 104, 36);
+    placeLoginButtons(194);
     app_.screen().setBackgroundColor(screenColor());
     listView_.visible = false;
     mailView_.visible = false;
@@ -695,7 +747,7 @@ private:
     setupDialog_.addAction(setupCancelButton_);
     setupDialog_.addAction(keyboard_);  // drawn inside the dialog, so it is above the card
     // the switch sits on the "Dark mode" line, at the right of the card
-    darkSwitch_.bounds = Bounds(170, 52, 52, 32);  // centred on the label
+    darkSwitch_.bounds = Bounds(w_ - 70, 52, 52, 32);  // centred on the label
   }
 
   // The setup file has one setting per line: dark=1 or dark=0, address=..., password=...
@@ -779,8 +831,7 @@ private:
     signInButton_.setLabel("Send");
     signInButton_.visible = true;
     cancelButton_.visible = true;
-    signInButton_.bounds = Bounds(12, 276, 104, 32);
-    cancelButton_.bounds = Bounds(124, 276, 104, 32);
+    placeLoginButtons(h_ - 44);
     appBar_.setTitle("New mail");
     appBar_.leading = &backButton_;
     app_.screen().invalidate();
@@ -920,8 +971,8 @@ private:
           const int mail = visible_[index];  // the mail of this row (see refreshList())
           ListItem<RGB565>& row = rowPool_[static_cast<size_t>(index) % kPoolSize];
           // each mail is a card, narrower than the screen and centred
-          row.bounds = Bounds(listView_.bounds.x + (listView_.bounds.w - kCardW) / 2,
-                              listView_.bounds.y + index * kRowH, kCardW, kRowH);
+          row.bounds = Bounds(listView_.bounds.x + (listView_.bounds.w - cardW_) / 2,
+                              listView_.bounds.y + index * kRowH, cardW_, kRowH);
           const MaterialTheme<RGB565>& theme = app_.screen().theme();
           row.setBackgroundColor(theme.colors.surface);  // the cards are white (light mode)
           row.setDividerColor(screenColor());            // the gap between two cards: the grey

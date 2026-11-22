@@ -21,7 +21,7 @@
 #if defined(ESP32)
 tinygpu::LCDBoardESP32S3_2_8Display board;
 #else
-tinygpu::LCDBoardDesktopSDL board(240, 320);
+tinygpu::LCDBoardDesktopSDL board(MAILGUI_WIDTH, MAILGUI_HEIGHT);
 #endif
 
 App<RGB565> app(board);
