@@ -1,0 +1,16 @@
+<map id="src/TinyEMail/TinyVector.h" name="src/TinyEMail/TinyVector.h">
+<area shape="rect" id="Node000001" title="A small vector for Arduino. Its memory comes from PSRAM when the board has it, otherwise from the nor..." alt="" coords="12,5,205,33"/>
+<area shape="rect" id="Node000002" href="$TinyMail_8h.html" title="The mail and attachment structures used by TinyEMail and TinySMTP." alt="" coords="18,81,199,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,46,111,81,106,80,108,51"/>
+<area shape="rect" id="Node000003" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="60,308,181,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,121,51,149,24,184,14,202,9,221,9,240,16,259,28,274,43,287,79,306,74,309,40,291,24,278,11,261,4,241,4,221,9,200,19,181,47,145,80,116"/>
+<area shape="rect" id="Node000004" href="$TinyMIME_8h.html" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="26,232,215,260"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="81,121,62,151,58,167,60,183,78,210,102,231,97,232,74,213,55,185,52,167,57,148,83,117"/>
+<area shape="rect" id="Node000005" href="$TinyMIMEReader_8h.html" title="Reads a received message as a stream: the parts of the mail come one after the other,..." alt="" coords="69,157,302,184"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="133,117,175,156,169,157,133,122"/>
+<area shape="rect" id="Node000006" href="$TinySMTP_8h.html" title="Header&#45;only SMTP client for Gmail with an Arduino style API." alt="" coords="243,232,430,260"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="213,103,269,121,295,136,317,155,329,173,336,195,339,233,335,231,331,196,324,176,313,158,292,140,267,126,214,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="122,274,123,309,118,306,118,278"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="166,194,134,234,130,230,162,198"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="286,265,160,310,158,305,281,265"/>
+</map>

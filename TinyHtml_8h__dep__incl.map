@@ -1,0 +1,5 @@
+<map id="src/TinyEMail/TinyHtml.h" name="src/TinyEMail/TinyHtml.h">
+<area shape="rect" id="Node000001" title="Composes the HTML of a mail. The markup is written straight to a Print, for example the body of a mai..." alt="" coords="5,5,190,33"/>
+<area shape="rect" id="Node000002" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="37,81,158,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,47,100,82,95,80,96,51"/>
+</map>

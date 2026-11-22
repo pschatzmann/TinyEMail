@@ -1,0 +1,9 @@
+<map id="TinyPart" name="TinyPart">
+<area shape="rect" id="Node000001" title="One part of a received mail, as given by a for loop over mail.parts()" alt="" coords="49,175,123,203"/>
+<area shape="rect" id="Node000002" href="$structTinyMailPart.html" title="One part of a received mail, e.g. the text body, an HTML alternative or an attachment...." alt="" coords="5,82,108,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,123,84,175,79,175,64,127"/>
+<area shape="rect" id="Node000003" href="$classTinyMailData.html" title="The data of one part of a mail, decoded while it is read (base64 and quoted&#45;printable)...." alt="" coords="132,82,240,110"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,120,102,177,99,173,158,120"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="152,5,220,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,46,188,83,183,81,184,51"/>
+</map>

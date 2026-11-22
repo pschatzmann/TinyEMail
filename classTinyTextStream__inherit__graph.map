@@ -1,0 +1,5 @@
+<map id="TinyTextStream" name="TinyTextStream">
+<area shape="rect" id="Node000001" title="A read only Stream over a text, e.g. the body of a mail." alt="" coords="5,81,129,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="33,5,101,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,47,70,81,64,80,65,51"/>
+</map>

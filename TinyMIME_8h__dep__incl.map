@@ -1,0 +1,5 @@
+<map id="src/TinyEMail/TinyMIME.h" name="src/TinyEMail/TinyMIME.h">
+<area shape="rect" id="Node000001" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="5,5,194,33"/>
+<area shape="rect" id="Node000002" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="39,81,160,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,102,82,97,80,98,51"/>
+</map>

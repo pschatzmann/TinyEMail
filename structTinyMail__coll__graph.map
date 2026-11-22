@@ -1,0 +1,9 @@
+<map id="TinyMail" name="TinyMail">
+<area shape="rect" id="Node000001" title="A mail. TinyEMail::receive() fills the received fields; send() uses the sent fields." alt="" coords="275,115,352,143"/>
+<area shape="rect" id="Node000002" href="$classTinyVector.html" title=" " alt="" coords="5,5,164,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,37,288,113,284,116,125,42"/>
+<area shape="rect" id="Node000003" href="$classTinyVector.html" title=" " alt="" coords="188,5,440,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,47,316,116,312,114,312,50"/>
+<area shape="rect" id="Node000004" href="$classTinyMIMEReader.html" title="Walks the parts of a message in order. Used by TinyMIME::parse() and by the parts of a received mail ..." alt="" coords="464,5,596,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="498,41,407,93,351,117,349,112,405,89,493,42"/>
+</map>

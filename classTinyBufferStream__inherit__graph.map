@@ -1,0 +1,5 @@
+<map id="TinyBufferStream" name="TinyBufferStream">
+<area shape="rect" id="Node000001" title="A read only Stream over bytes in memory, e.g. binary data for an attachment." alt="" coords="5,81,141,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="39,5,107,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,47,76,81,70,80,71,51"/>
+</map>

@@ -1,0 +1,40 @@
+<map id="src/TinyEMail/TinyMIMEReader.h" name="src/TinyEMail/TinyMIMEReader.h">
+<area shape="rect" id="Node000001" title="Reads a received message as a stream: the parts of the mail come one after the other,..." alt="" coords="102,5,335,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="358,232,431,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,31,331,49,352,63,371,79,392,111,401,148,404,185,401,218,397,215,398,185,396,149,387,114,367,83,349,67,328,54,285,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,308,151,336"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,36,82,54,60,67,41,83,21,106,10,129,9,154,16,183,31,216,50,247,93,296,88,298,46,250,26,219,11,185,4,154,5,128,16,104,37,79,57,62,80,49,130,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="41,157,100,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,36,96,147,92,144,207,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="485,308,568,336"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="336,23,444,41,501,56,558,76,612,103,661,138,701,180,732,231,736,254,730,272,715,287,693,299,640,313,584,321,583,315,639,308,691,294,712,283,725,269,731,253,727,233,697,183,657,142,609,108,556,81,500,61,443,46,336,29"/>
+<area shape="rect" id="Node000006" href="$TinyLogger_8h.html" title="A logger with levels for TinyEMail. There is one logger object, reached through the static reference ..." alt="" coords="179,232,283,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="178,36,121,61,62,95,39,116,25,137,21,159,32,183,58,208,91,225,128,236,166,243,161,245,127,241,90,230,55,213,27,186,16,160,20,135,35,112,59,91,119,56,181,31"/>
+<area shape="rect" id="Node000007" href="$TinyMail_8h.html" title="The mail and attachment structures used by TinyEMail and TinySMTP." alt="" coords="267,81,357,109"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="235,31,286,71,281,72,235,36"/>
+<area shape="rect" id="Node000009" href="$TinyText_8h.html" title="Text helpers shared by the mail classes: limited line reading, case, base64, percent decoding and the..." alt="" coords="175,157,263,184"/>
+<area shape="poly" id="edge25_Node000001_Node000009" title=" " alt="" coords="220,31,221,141,216,140,217,35"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="213,260,150,302,148,297,208,261"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="284,258,472,306,467,307,283,263"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="328,106,351,128,372,155,385,186,393,219,388,216,380,188,367,158,347,132,327,112"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="265,105,213,124,187,139,165,158,144,190,130,226,123,262,119,294,114,291,117,261,125,225,139,188,161,155,184,135,211,119,269,102"/>
+<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="268,112,116,158,114,153,270,107"/>
+<area shape="poly" id="edge12_Node000007_Node000005" title=" " alt="" coords="357,98,468,116,534,132,597,154,663,181,688,200,710,231,716,251,712,267,699,281,681,293,634,309,584,318,583,312,633,303,679,288,696,277,707,265,711,251,706,233,684,203,661,186,595,159,532,137,467,121,357,103"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="288,157,358,184"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="315,107,321,142,316,140,313,112"/>
+<area shape="poly" id="edge14_Node000007_Node000009" title=" " alt="" coords="297,108,249,149,245,145,293,111"/>
+<area shape="rect" id="Node000010" href="$TinyVector_8h.html" title="A small vector for Arduino. Its memory comes from PSRAM when the board has it, otherwise from the nor..." alt="" coords="483,157,584,184"/>
+<area shape="poly" id="edge19_Node000007_Node000010" title=" " alt="" coords="352,107,482,151,477,152,351,112"/>
+<area shape="poly" id="edge15_Node000009_Node000002" title=" " alt="" coords="250,182,352,225,347,227,250,188"/>
+<area shape="poly" id="edge16_Node000009_Node000003" title=" " alt="" coords="208,183,169,234,132,296,127,292,165,231,204,186"/>
+<area shape="poly" id="edge17_Node000009_Node000005" title=" " alt="" coords="235,182,284,219,348,258,411,284,473,306,468,306,409,289,345,262,281,223,234,187"/>
+<area shape="poly" id="edge18_Node000009_Node000006" title=" " alt="" coords="222,183,229,218,224,216,219,187"/>
+<area shape="poly" id="edge20_Node000010_Node000002" title=" " alt="" coords="511,184,434,227,432,222,506,186"/>
+<area shape="poly" id="edge24_Node000010_Node000006" title=" " alt="" coords="480,185,299,231,297,226,485,183"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="528,232,597,260"/>
+<area shape="poly" id="edge21_Node000010_Node000011" title=" " alt="" coords="540,183,554,219,549,217,537,187"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="622,232,695,260"/>
+<area shape="poly" id="edge22_Node000010_Node000012" title=" " alt="" coords="556,182,626,225,621,224,555,187"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="456,232,504,260"/>
+<area shape="poly" id="edge23_Node000010_Node000013" title=" " alt="" coords="526,183,500,222,497,218,522,186"/>
+</map>

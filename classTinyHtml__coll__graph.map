@@ -1,0 +1,5 @@
+<map id="TinyHtml" name="TinyHtml">
+<area shape="rect" id="Node000001" title="Writes HTML to a Print. Text is escaped, so user input cannot add tags. The calls can be chained:" alt="" coords="5,81,87,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="20,5,72,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,47,49,81,43,80,44,51"/>
+</map>

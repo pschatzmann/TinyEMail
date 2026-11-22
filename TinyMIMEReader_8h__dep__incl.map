@@ -1,0 +1,7 @@
+<map id="src/TinyEMail/TinyMIMEReader.h" name="src/TinyEMail/TinyMIMEReader.h">
+<area shape="rect" id="Node000001" title="Reads a received message as a stream: the parts of the mail come one after the other,..." alt="" coords="5,5,239,33"/>
+<area shape="rect" id="Node000002" href="$TinyMIME_8h.html" title="Splits a received message into its parts. Every part is delivered to a visitor with its data as a str..." alt="" coords="28,81,216,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,47,125,81,119,80,121,51"/>
+<area shape="rect" id="Node000003" href="$TinyEMail_8h.html" title="Header&#45;only e&#45;mail client for Gmail with an Arduino style API." alt="" coords="62,157,182,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,123,124,157,120,155,120,126"/>
+</map>
