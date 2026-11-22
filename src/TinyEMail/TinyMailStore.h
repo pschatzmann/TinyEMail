@@ -61,6 +61,20 @@ class TinyMailStore {
   /// Folder of the mail at index i: "inbox" (received) or "sent"
   const String& box(int i) const { return boxes_[i]; }
 
+  /// True when the mail at index i has been opened (see markRead())
+  bool read(int i) const { return reads_[i]; }
+
+  /// Sets the read flag of the mail at index i and writes it to the header of the mail
+  bool markRead(int i, bool read) {
+    reads_[i] = read;
+    String lines = "From: " + froms_[i] + "\nSubject: " + subjects_[i] + "\nDate: " + dates_[i] + "\nBox: " +
+                   boxes_[i] + "\nRead: " + String(read ? "1" : "0") + "\n";
+    for (int k = 0; k < attachmentCount(i); k++) {
+      lines += String(kAttachment) + attachmentName(i, k) + "\n";
+    }
+    return writeText(String(kRoot) + "/" + folders_[i] + "/mail.txt", lines);
+  }
+
   /// File of the body of the mail at index i: the HTML part if there is one,
   /// otherwise the text part. plain is set to true for a text part. The file
   /// is not read here, it is rendered by TinyHtmlView while it is streamed.
@@ -131,7 +145,7 @@ class TinyMailStore {
     }
 
     String date = mail.header("Date");
-    String header = "From: " + mail.from + "\nSubject: " + mail.subject + "\nDate: " + date + "\nBox: inbox\n" +
+    String header = "From: " + mail.from + "\nSubject: " + mail.subject + "\nDate: " + date + "\nBox: inbox\nRead: 0\n" +
                     attachmentLines;
     if (!writeText(dir + "/mail.txt", header)) {
       return false;
@@ -142,6 +156,7 @@ class TinyMailStore {
     subjects_[count_] = mail.subject;
     dates_[count_] = date;
     boxes_[count_] = "inbox";
+    reads_[count_] = false;
     count_++;
     return true;
   }
@@ -195,9 +210,10 @@ class TinyMailStore {
     if (!fs_.exists(dir.c_str()) && !fs_.mkdir(dir.c_str())) return false;
     if (html.length() > 0) writeText(dir + "/body.html", html);
     if (text.length() > 0) writeText(dir + "/body.txt", text);
-    String header = "From: " + from + "\nSubject: " + subject + "\nDate: " + date + "\nBox: " + box + "\n";
+    String header = "From: " + from + "\nSubject: " + subject + "\nDate: " + date + "\nBox: " + box + "\nRead: " + String(box == "sent" ? "1" : "0") + "\n";
     dates_[count_] = date;
     boxes_[count_] = box;
+    reads_[count_] = box == "sent";
     if (attachmentName.length() > 0) {
       String fileName = sanitize(attachmentName);
       writeText(dir + "/" + fileName, attachmentData);
@@ -222,7 +238,7 @@ class TinyMailStore {
     String dir = String(kRoot) + "/" + folders_[i];
     String name = sanitize(fileName);
     String lines = "From: " + froms_[i] + "\nSubject: " + subjects_[i] + "\nDate: " + dates_[i] + "\nBox: " +
-                   boxes_[i] + "\n";
+                   boxes_[i] + "\nRead: " + String(reads_[i] ? "1" : "0") + "\n";
     int n = attachmentCount(i);
     for (int k = 0; k < n; k++) {
       lines += String(kAttachment) + attachmentName(i, k) + "\n";
@@ -257,6 +273,7 @@ class TinyMailStore {
   String froms_[kMaxMails];
   String dates_[kMaxMails];
   String boxes_[kMaxMails];  // "inbox" or "sent"
+  bool reads_[kMaxMails] = {};  // the read flag: a mail without a Read line is unread
   int count_ = 0;
 
   String path(int i, const char* file) const { return String(kRoot) + "/" + folders_[i] + "/" + file; }
@@ -288,6 +305,7 @@ class TinyMailStore {
       subjects_[i] = headerValue(mailFile, "Subject: ");
       dates_[i] = headerValue(mailFile, "Date: ");
       boxes_[i] = headerValue(mailFile, "Box: ");
+      reads_[i] = headerValue(mailFile, "Read: ") == "1";
       if (boxes_[i].length() == 0) boxes_[i] = "inbox";
     }
   }

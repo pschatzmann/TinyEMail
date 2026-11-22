@@ -422,6 +422,7 @@ class TinyEMailGUI {
   }
 
   void showMail(int index) {
+    store_.markRead(index, true);  // opened: no longer unread
     currentMail_ = index;
     view_ = View::kMail;
     showMailColors();
@@ -934,6 +935,9 @@ private:
           row.setDivider(true);
           row.setDividerInset(false);  // full width of the card
           row.setTitleFont(labelFont());   // the subject: Lato12
+          // an unread mail: the subject in black; a read mail: the subject in grey
+          row.setTitleColor(store_.read(mail) ? theme.colors.onSurfaceVariant
+                                              : (darkMode_ ? theme.colors.onSurface : RGB565::fromRGB(0, 0, 0)));
           row.setSubtitleFont(smallFont());  // the address: Lato8
           row.onClick = [this, mail]() { showMail(mail); };
           return row;
