@@ -1,5 +1,3 @@
-# Desktop build
-
 Build the library and its tests on the desktop, and test against a mail server.
 
 The desktop build uses [Arduino-Emulator](https://github.com/pschatzmann/Arduino-Emulator),

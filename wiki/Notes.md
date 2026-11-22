@@ -1,5 +1,3 @@
-# Notes and limitations
-
 What the library does not do yet.
 
 - TLS only (SMTPS on port 465, IMAPS on port 993). STARTTLS and OAuth2 are not

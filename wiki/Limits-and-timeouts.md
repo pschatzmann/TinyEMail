@@ -1,5 +1,3 @@
-# Limits and timeouts
-
 Limits on what a server may send, and the timeouts.
 
 | Setting | Default | Meaning |

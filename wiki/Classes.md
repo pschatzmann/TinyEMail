@@ -1,5 +1,3 @@
-# Classes
-
 The classes of the library.
 
 | Class | What it is |

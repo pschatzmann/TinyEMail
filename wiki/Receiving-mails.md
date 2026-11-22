@@ -1,5 +1,3 @@
-# Receiving mails
-
 Receiving calls a callback once per mail; the parts are read in a loop.
 
 `receive()` calls a callback once for each mail. The callback gets the mail,

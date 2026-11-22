@@ -1,5 +1,3 @@
-# Usage
-
 Login, send, receive and the servers the client talks to.
 
 ## Quick start

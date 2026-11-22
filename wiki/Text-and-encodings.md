@@ -1,5 +1,3 @@
-# Text and encodings
-
 How text, charsets and encoded words are handled.
 
 - Text is returned as it is in the mail. Charsets UTF-8, US-ASCII and ISO-8859-1

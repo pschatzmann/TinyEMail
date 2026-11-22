@@ -1,5 +1,3 @@
-# Sending mails
-
 Recipients, attachments, streams and streamed bodies.
 
 A mail to send is a `TinyEMail::Mail` (`TinyMail`). Its `to` is a list of

@@ -1,0 +1,11 @@
+- [Usage](Usage): login, send, receive, and the servers
+- [Sending mails](Sending-mails): recipients, attachments, streams and streamed bodies
+- [Receiving mails](Receiving-mails): the callback, the parts of a mail and flags
+- [Logging](Logging): log levels and what is logged
+- [Limits and timeouts](Limits-and-timeouts): size limits and timeouts
+- [Text and encodings](Text-and-encodings): charsets, base64, quoted-printable, encoded words
+- [Classes](Classes): the classes of the library
+- [Examples](Examples): the example sketches
+- [Desktop build](Desktop-build): CMake, unit tests and the mail server test
+- [Notes](Notes): limitations
+- [Class documentation (Doxygen)](https://pschatzmann.github.io/TinyEMail/annotated.html): API reference for all classes

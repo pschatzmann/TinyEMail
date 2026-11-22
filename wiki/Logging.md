@@ -1,5 +1,3 @@
-# Logging
-
 The logger shows the steps of the library and what fails.
 
 `Logger` is the logger of the library. Call `begin()` to choose where the

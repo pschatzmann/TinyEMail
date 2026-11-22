@@ -38,16 +38,16 @@ void setup() {
 
 ## Documentation
 
-- [Usage](docs/usage.md): login, send, receive, and the servers the client talks to
-- [Sending mails](docs/sending.md): recipients, attachments, streams and streamed bodies
-- [Receiving mails](docs/receiving.md): the callback, the parts of a mail and flags
-- [Logging](docs/logging.md): log levels and what is logged
-- [Limits and timeouts](docs/limits.md): size limits and timeouts
-- [Text and encodings](docs/encodings.md): charsets, base64, quoted-printable, encoded words
-- [Classes](docs/classes.md): the classes of the library
-- [Examples](docs/examples.md): the example sketches
-- [Desktop build](docs/desktop-build.md): CMake, unit tests and the mail server test
-- [Notes](docs/notes.md): limitations
+- [Usage](https://github.com/pschatzmann/TinyEMail/wiki/Usage): login, send, receive, and the servers the client talks to
+- [Sending mails](https://github.com/pschatzmann/TinyEMail/wiki/Sending-mails): recipients, attachments, streams and streamed bodies
+- [Receiving mails](https://github.com/pschatzmann/TinyEMail/wiki/Receiving-mails): the callback, the parts of a mail and flags
+- [Logging](https://github.com/pschatzmann/TinyEMail/wiki/Logging): log levels and what is logged
+- [Limits and timeouts](https://github.com/pschatzmann/TinyEMail/wiki/Limits-and-timeouts): size limits and timeouts
+- [Text and encodings](https://github.com/pschatzmann/TinyEMail/wiki/Text-and-encodings): charsets, base64, quoted-printable, encoded words
+- [Classes](https://github.com/pschatzmann/TinyEMail/wiki/Classes): the classes of the library
+- [Examples](https://github.com/pschatzmann/TinyEMail/wiki/Examples): the example sketches
+- [Desktop build](https://github.com/pschatzmann/TinyEMail/wiki/Desktop-build): CMake, unit tests and the mail server test
+- [Notes](https://github.com/pschatzmann/TinyEMail/wiki/Notes): limitations
 - [Class documentation (Doxygen)](https://pschatzmann.github.io/TinyEMail/annotated.html): API reference for all classes
 
 ## Installation in Arduino
@@ -61,7 +61,7 @@ git clone https://github.com/pschatzmann/TinyEMail.git
 
 I recommend to use git because you can easily update to the latest version just by executing the ```git pull``` command in the project folder.
 
-The emulator and the test mail server are only needed for the desktop build, see [Desktop build](docs/desktop-build.md).
+The emulator and the test mail server are only needed for the desktop build, see [Desktop build](https://github.com/pschatzmann/TinyEMail/wiki/Desktop-build).
 
 ## License
 

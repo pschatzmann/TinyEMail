@@ -1,5 +1,3 @@
-# Examples
-
 The example sketches in the examples folder.
 
 - `examples/Send/Send.ino`: logs in and sends a mail with a text body and an
