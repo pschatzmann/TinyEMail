@@ -6,7 +6,7 @@ var searchData=
   ['at_3',['at',['../classTinyVector.html#a98c13d43d8452c1ef47c764383e49ae9',1,'TinyVector::at(size_t index) const'],['../classTinyVector.html#abf5b308b41eb84b8647d6e356224e885',1,'TinyVector::at(size_t index)']]],
   ['attach_4',['attach',['../classTinyMailData.html#a0ed2ce34cc08d2bcb1d81e04908ff214',1,'TinyMailData']]],
   ['attachfile_5',['attachFile',['../classTinyMailStore.html#aafe3ab9a925016dad44a297cc96dd3c5',1,'TinyMailStore']]],
-  ['attachment_6',['attachment',['../classTinyEMail.html#acf4bcc6431a80464cb2a02260a686869',1,'TinyEMail::Attachment'],['../structTinyMailPart.html#add0327e846a7e2a7561a6561b1e285ed',1,'TinyMailPart::attachment']]],
+  ['attachment_6',['attachment',['../structTinyMailPart.html#add0327e846a7e2a7561a6561b1e285ed',1,'TinyMailPart::attachment'],['../classTinyEMail.html#acf4bcc6431a80464cb2a02260a686869',1,'TinyEMail::Attachment']]],
   ['attachmentcount_7',['attachmentCount',['../classTinyMailStore.html#a782b5e86aa0819a525ef183f71bdd54b',1,'TinyMailStore']]],
   ['attachmentname_8',['attachmentName',['../classTinyMailStore.html#a75d9899dd7362d68d6b1d59bf398fed5',1,'TinyMailStore']]],
   ['attachmentpath_9',['attachmentPath',['../classTinyMailStore.html#af00b345779da82f8a69dd98f640939d5',1,'TinyMailStore']]],

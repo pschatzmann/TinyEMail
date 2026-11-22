@@ -5,7 +5,7 @@ var searchData=
   ['lastresponse_2',['lastResponse',['../classTinyIMAP.html#ad63d90e484215bf1c54d5f99b6f68c20',1,'TinyIMAP']]],
   ['lastuntagged_3',['lastUntagged',['../classTinyIMAP.html#ae2f48529f41e1e491047b1116e8c60bd',1,'TinyIMAP']]],
   ['layout_4',['layout',['../classTinyHtmlView.html#ad812938f726056b4cc3b39cbb8423f8b',1,'TinyHtmlView::layout()'],['../classTinyImageView.html#ab835e9b530335c58e5129cb67f01d835',1,'TinyImageView::layout()']]],
-  ['level_5',['level',['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0',1,'TinyLogger::Level'],['../classTinyLogger.html#a953a2d0a66f47d4741a2c2f63c9104f0',1,'TinyLogger::level() const']]],
+  ['level_5',['level',['../classTinyLogger.html#a953a2d0a66f47d4741a2c2f63c9104f0',1,'TinyLogger::level() const'],['../classTinyLogger.html#a93549d74937bb01bfcebd39cb18c68c0',1,'TinyLogger::Level']]],
   ['license_6',['License',['../index.html#autotoc_md4',1,'']]],
   ['linebreak_7',['lineBreak',['../classTinyHtml.html#a7655f9559445dd2109c4240487122b41',1,'TinyHtml']]],
   ['link_8',['link',['../classTinyHtml.html#afb5c9579a450834506de8c3eb5bc7a1f',1,'TinyHtml']]],
